@@ -1,0 +1,31 @@
+section
+  .col.half
+      form(action="http://localhost:1337/contact/new" method="post")
+        h1 We'd like to get to know you!
+        h1 What do you like to be called
+        input.formup-delta(type="text", name="firstname", value="", placeholder="First Name")
+        input.formup-delta(type="text", name="lastname", value="", placeholder="Last Name")
+        h1 What do you do?
+        input.formup-delta(type="text", name="job", value="", placeholder="Job")
+        input.formup-delta(type="text", name="company", value="", placeholder="Company")
+        h1 We'd love to get back to you, how can we do that?
+        input.formup-delta(type="text", name="email", value="", placeholder="Email")
+        input.formup-delta(type="text", name="phone", value="", placeholder="Phone Number")
+
+        h1 Tell us a little about your project
+        
+        select.select-select.budget(name="budget")
+          option(value="$2k-$5k") $2k-$5k
+          option(value="$5k-$10k") $5k-$10k
+          option(value="$10k-$20k") $10k-$20k
+          option(value="$20k+") $20k+
+          option(value="Not Sure") Not Sure
+
+        input.formup-delta.pname(type="text", name="subject", value="", placeholder="Project Name")
+        div
+          textarea.formup-delta.message(type="text", name="message", value="", placeholder="Message")
+        input.button.large(type="submit", value="Submit")
+  .col.fourth
+    h1 Test Header
+  .col.fourth
+    h3 Test Header

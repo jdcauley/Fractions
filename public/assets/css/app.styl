@@ -1,0 +1,91 @@
+@import 'extend/_normalize'
+@import 'extend/fa/font-awesome.min.css'
+@import 'extend/_select'
+
+white = #fff
+
+border-radius()
+  -webkit-border-radius arguments
+  -moz-border-radius arguments
+  border-radius arguments
+
+transition()
+  -webkit-transition arguments
+  -moz-transition arguments
+  -ms-transition arguments
+  -o-transition arguments
+  transition arguments
+
+.col
+  display inline-block
+  height auto
+  width 100%
+  padding 3%
+  vertical-align top
+  -webkit-box-sizing border-box /* Safari/Chrome, other WebKit */
+  -moz-box-sizing border-box    /* Firefox, other Gecko */
+  box-sizing border-box
+
+h1,h2,h3,h4,h5,h6
+  text-align center
+
+input,
+select,
+textarea,
+.select-target.select-theme-default
+  display block
+  height auto
+  width 90%
+  padding 10px
+  margin 10px auto
+  font-size: 16px
+  background-color white
+  border 2px solid #dce4ec
+  border-radius 4px
+  transition border-color 400ms
+
+.select.select-theme-default .select-options .select-option:first-child
+  border-radius(0)
+
+.select
+  width 50%
+
+.select.select-theme-default .select-content
+  max-width 100%
+  width 100%
+
+
+@media (min-width: 720px)
+  h1,h2,h3,h4,h5,h6
+    text-align left
+  .four-fifths
+    width 80%
+
+  .three-fourths
+    width 75%
+
+  .fifth
+    width 20%
+
+  .fourth
+    width 25%
+
+  .third
+    width 33.3333%
+
+  .half
+    width 50%
+
+  input,
+  select,
+  textarea,
+    margin 10px
+
+  .select-target.select-theme-default
+    margin 10px 0 10px 10px
+
+body
+  color #34495e
+  font-size 16px
+  font-family "Helvetica Neue",Helvetica,Arial,sans-serif
+  font-weight 300
